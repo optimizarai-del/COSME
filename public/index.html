@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COSME - Credential Manager Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- React 18 from CDN -->
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/react.min.js"></script>
+  <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/react-dom.min.js"></script>
+
+  <!-- Babel Standalone for JSX transformation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+
+  <!-- Load React app - Import maps for ES6 modules -->
+  <script type="importmap">
+    {
+      "imports": {
+        "react": "https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/react.min.js",
+        "react-dom": "https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/react-dom.min.js"
+      }
+    }
+  </script>
+
+  <!-- Main app - transpile JSX to JS -->
+  <script type="text/babel" src="/src/App.jsx"></script>
+  <script type="text/babel" src="/src/index.jsx"></script>
+</body>
+</html>

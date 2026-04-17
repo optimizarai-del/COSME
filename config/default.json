@@ -1,0 +1,14 @@
+{
+  "executor": {
+    "maxRetries": 3,
+    "timeout": 30000,
+    "logging": {
+      "level": "info"
+    }
+  },
+  "tools": {},
+  "mcp": {
+    "enabled": true,
+    "servers": []
+  }
+}

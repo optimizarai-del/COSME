@@ -1,4 +1,5 @@
 version: '3.8'
+
 services:
   cosme:
     build:
@@ -12,6 +13,8 @@ services:
       - ENCRYPTION_KEY=${ENCRYPTION_KEY}
       - GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}
       - GOOGLE_CLIENT_SECRET=${GOOGLE_CLIENT_SECRET}
+      - GOOGLE_ACCESS_TOKEN=${GOOGLE_ACCESS_TOKEN}
+      - GOOGLE_REFRESH_TOKEN=${GOOGLE_REFRESH_TOKEN}
       - HUBSPOT_CLIENT_ID=${HUBSPOT_CLIENT_ID}
       - HUBSPOT_CLIENT_SECRET=${HUBSPOT_CLIENT_SECRET}
       - HUBSPOT_REDIRECT_URI=${HUBSPOT_REDIRECT_URI:-http://localhost:3000/api/oauth/hubspot/callback}
@@ -21,6 +24,9 @@ services:
       - STRIPE_CLIENT_ID=${STRIPE_CLIENT_ID}
       - STRIPE_SECRET_KEY=${STRIPE_SECRET_KEY}
       - STRIPE_REDIRECT_URI=${STRIPE_REDIRECT_URI:-http://localhost:3000/api/oauth/stripe/callback}
+    volumes:
+      - ./src:/app/src
+      - ./examples:/app/examples
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
       interval: 30s
@@ -28,3 +34,29 @@ services:
       retries: 3
       start_period: 5s
     restart: unless-stopped
+
+  # Optional: Redis for production credential caching
+  # redis:
+  #   image: redis:7-alpine
+  #   ports:
+  #     - "6379:6379"
+  #   healthcheck:
+  #     test: ["CMD", "redis-cli", "ping"]
+  #     interval: 10s
+  #     timeout: 3s
+  #     retries: 3
+
+  # Optional: PostgreSQL for production credential persistence
+  # postgres:
+  #   image: postgres:15-alpine
+  #   ports:
+  #     - "5432:5432"
+  #   environment:
+  #     - POSTGRES_DB=cosme
+  #     - POSTGRES_USER=cosme
+  #     - POSTGRES_PASSWORD=${DB_PASSWORD}
+  #   healthcheck:
+  #     test: ["CMD-SHELL", "pg_isready -U cosme"]
+  #     interval: 10s
+  #     timeout: 5s
+  #     retries: 5

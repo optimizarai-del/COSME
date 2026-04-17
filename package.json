@@ -9,7 +9,14 @@
     "lint": "eslint src/",
     "start": "node examples/full-server-example.js"
   },
-  "keywords": ["ai", "automation", "tools", "executor", "mcp", "claude"],
+  "keywords": [
+    "ai",
+    "automation",
+    "tools",
+    "executor",
+    "mcp",
+    "claude"
+  ],
   "author": "Optimizar AI",
   "license": "MIT",
   "dependencies": {
