@@ -12,5 +12,4 @@ coverage
 .nyc_output
 dist
 test
-examples
 .github
