@@ -17,3 +17,7 @@ tags: [accenture, machete]
 | [[06 - Pipelines]] | ETL/ELT; batch = colectivo, streaming = taxi; Beam = receta, Dataflow = cocina |
 | Idempotencia | 10 veces = 1 vez (botón del ascensor) |
 | [[07 - BI y Dashboards]] | KPI = el número clave; dimensión = por qué corto, métrica = qué mido |
+| [[08 - n8n]] | Cajitas conectadas: trigger → nodos → acción; errores + reintentos + idempotencia |
+| [[09 - Seguridad, PII y Multicloud]] | Enmascarar, mínimo necesario, plan sin entrenamiento, sin PII en logs |
+| [[10 - Liderazgo Técnico]] | "¿Qué probaste?" → guiar → pair → documentar; negociar alcance, no calidad |
+| Si me quedo en blanco | Pregunta aclaratoria → pensar en voz alta → honestidad → mi experiencia |

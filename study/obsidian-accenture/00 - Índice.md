@@ -13,6 +13,14 @@ Mapa de estudio. Cada tema tiene su nota.
 - [[05 - APIs y Colas]]
 - [[06 - Pipelines]]
 - [[07 - BI y Dashboards]]
+- [[08 - n8n]]
+- [[09 - Seguridad, PII y Multicloud]]
+
+## Entrevista técnica (empezá acá)
+- [[12 - Sistema de Estudio]]: plan día por día
+- [[98 - Revisión de la Postulación]]: requisitos vs. notas y riesgos del CV
+- [[10 - Liderazgo Técnico]]: lo que más buscan
+- [[11 - Banco de Preguntas]]: flashcards, live coding, diseño, inglés
 
 ## Repaso rápido
 - [[99 - Machete]]
