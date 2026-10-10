@@ -21,6 +21,7 @@ Mapa de estudio. Cada tema tiene su nota.
 - [[98 - Revisión de la Postulación]]: requisitos vs. notas y riesgos del CV
 - [[10 - Liderazgo Técnico]]: lo que más buscan
 - [[11 - Banco de Preguntas]]: flashcards, live coding, diseño, inglés
+- [[13 - Cuaderno de Ejercicios]]: 45+ ejercicios conectados con Ciudad, Babilonia, Sonner y COSME (también en PDF: `study/Cuaderno-Entrevista-Tecnica-Accenture.pdf`)
 
 ## Repaso rápido
 - [[99 - Machete]]
